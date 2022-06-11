@@ -1,0 +1,147 @@
+/* styling information beneath spinner */
+
+body {
+  background-color: teal;
+  font-family: verdana;
+}
+
+/* general styling */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+#spinner {
+  width: 500px;
+  height: 420px;
+  border: 2px solid black;
+}
+
+/* styling for all information beneath spinner */
+#information {
+  width: 500px;
+  height: 300px;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 50%;
+
+  position: relative;
+  margin-top: -240px;
+  margin-left: 215px;
+}
+
+/* styling for first header in general(edits,results and the likes */
+.header {
+  background-color: rgb(244, 238, 238);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* styling for first li tag */
+li:first-child {
+  position: relative;
+}
+
+/* styling for numbers on edit and results */
+span {
+  position: absolute;
+  margin-top: -10px;
+  height: 17px;
+  width: 17px;
+  color: white;
+  padding: 2px;
+
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* styling for general li tags */
+li {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+/* styling for fourth li tag */
+li:nth-child(4) {
+  background-color: pink;
+
+  height: 40px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-top-right-radius: 5px;
+}
+
+/* styling for sort and clear button */
+.options {
+  position: relative;
+  margin-top: 10px;
+  margin-right: 225px;
+}
+
+/* styling for buttons */
+button {
+  height: 35px;
+  outline: none;
+  border-radius: 3px;
+  font-family: verdana;
+  color: black;
+  border: none;
+
+  background-color: rgba(244, 238, 238, 0.616);
+}
+
+/* styling for spin outcome tab */
+.outcomes {
+  margin-top: 10px;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(244, 238, 238, 0.616);
+  border-radius: 3px;
+}
+
+/* styling for information beneath spinner finished */
+
+#circle {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.radi {
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+  position: absolute;
+  transform-origin: 100% 50%;
+}
