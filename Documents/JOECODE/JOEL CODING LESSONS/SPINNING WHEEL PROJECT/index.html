@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <title>Document</title>
     <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="index.css">
-
-    
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="spin.css" />
+  </head>
+  <body>
     <div class="main">
-        <div id="spinner">
-            <center> 
-                <div id="circle">
-                    
-                    
-                    
-                </div>
+      <div id="spinner">
+        <center>
+          <div id="circle">
+            <div id="wheelOfFortune">
+              <canvas id="wheel" width="500" height="500"></canvas>
+              <div id="spin">SPIN asd asd asd as dasd as dasd asd asd as d</div>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div id="information">
+        <div class="header">
+          <li id="edit">
+            <i class="fa-solid fa-1x fa-pen" style="margin-right: 5px"></i>Edit
+            <span id="span"><center>0</center></span>
+          </li>
+          <li id="result">
+            Results <span><center>6</center></span>
+          </li>
+          <li id="hide">Hide</li>
+          <li id="add">
+            <center>
+              Add
+              <i class="fa-solid fa-dharmachakra" style="margin-right: 5px"></i>
             </center>
-           
+          </li>
         </div>
 
-        <div id="information">
-            <div class="header">
-                <li id="edit"><i class="fa-solid fa-1x fa-pen" style="margin-right: 5px;"></i>Edit  <span id="span"><center>0</center></span></li> 
-                <li id="result">Results <span><center>6</center></span></li>
-                <li id="hide"> Hide</li>
-                <li id="add" ><center> Add <i class="fa-solid fa-dharmachakra" style="margin-right: 5px;"></i></center>  </li>
-            </div>
-
-            <div class="options">
-                <button id="sort" ><i class="fa-solid fa-arrow-up-a-z"></i>  Sort</button>
-                <button id="clear"><i class="fa-solid fa-xmark"></i>  Clear the list</button>
-            </div>
-
-            <div class="outcomes">
-                 
-            </div>
-            
+        <div id="inputs-container">
+          <input
+            type="text"
+            class="item"
+            id="newItem"
+            placeholder="enter item here"
+          />
+          <input
+            type="color"
+            class="item"
+            id="newColor"
+            placeholder="enter item here"
+          />
+          <button id="mainAdd">Add</button>
         </div>
-        
+        <div class="edit-container">
+          <div class="edit-inputs-container">
+            <!-- <div class="edit-input-item">
+              <input id="edit-label" type="text" />
+              <input id="edit-color" type="color" />
+            </div> -->
+          </div>
+          <button id="update">Update</button>
+        </div>
+
+        <div class="options">
+          <button id="sort">
+            <i class="fa-solid fa-arrow-up-a-z"></i>Sort
+          </button>
+          <button id="clear">
+            <i class="fa-solid fa-xmark"></i> Clear the list
+          </button>
+        </div>
+
+        <div class="outcomes"></div>
+      </div>
     </div>
- 
 
-
-  
-    <script src="index.js">
-
-     
-
-</script>
-
- 
-
-</body>
+    <!-- <script src="index.js"></script> -->
+    <script src="spin.js"></script>
+  </body>
 </html>
