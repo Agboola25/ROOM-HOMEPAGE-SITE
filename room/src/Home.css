@@ -1,0 +1,45 @@
+body {
+  font-family: verdana;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 750px;
+  border: 2px solid black;
+  margin: 0px 0px;
+}
+
+.topdiv {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.TopDivImg {
+  width: 60%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+/*STYLING FOR SHOP SECTION*/
+.TopDivShop {
+  border: 2px solid black;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shopTop {
+  margin: 55px 55px;
+}
+
+.shopTopText p {
+  font-size: 15px;
+}
+.shopNow{
+  display:flex;
+  flex-direction: row;
+}
