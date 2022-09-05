@@ -2,6 +2,10 @@ import "./Home.css";
 
 import { useState } from "react";
 import Arrow from "./icons/Arrow";
+import Right from "./icons/Right";
+import Left from "./icons/Left";
+import dark from "./images/image-about-dark.jpg";
+import light from "./images/image-about-light.jpg";
 
 const Home = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,13 +52,35 @@ const Home = ({ slides }) => {
 
           <div className="shopBtn">
             <button className="previous" onClick={previous}>
-              previous
+              <Left />
             </button>
 
             <button className="Next" onClick={Next}>
-              next
+              <Right />
             </button>
           </div>
+        </div>
+      </div>
+
+      <div className="bottomDiv">
+        <div className="firstBtm">
+          <img src={dark} alt="" />
+        </div>
+
+        <div className="secondBtm">
+          <h1>About our furniture</h1>
+          <p>
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+
+        <div className="thirdBtm">
+          <img src={light} alt="" />
         </div>
       </div>
     </div>

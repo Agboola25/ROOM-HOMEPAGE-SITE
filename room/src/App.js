@@ -1,5 +1,7 @@
 import "./App.css";
 import Home from "./Home";
+import Navbar from "./Navbar";
+ 
 
 function App() {
   const slides = [
@@ -21,6 +23,7 @@ function App() {
   ];
   return (
     <div>
+      <Navbar/>
       <Home slides={slides} />
     </div>
   );

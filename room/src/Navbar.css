@@ -1,0 +1,23 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: center;
+  margin-left: 60px;
+  margin-top: 20px;
+  color:white;
+}
+.Navbar ul{
+    display:flex;
+    flex-direction: row;
+}
+.Navbar h1{
+    margin-right: 15px;
+    font-size:30px ;
+}
+.Navbar ul li {
+    text-decoration: none;
+    list-style-type:none;
+    margin-right: 20px;
+    font-size: 17px;
+}
