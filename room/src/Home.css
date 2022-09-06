@@ -1,7 +1,7 @@
-body {
-  font-family: verdana;
+@font-face {
+  font-family: League Spartan;
+  src: url(https://fonts.google.com/specimen/League+Spartan);
 }
-
 .mainDiv {
   display: flex;
   flex-direction: column;
