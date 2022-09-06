@@ -22,6 +22,12 @@
   font-size: 17px;
 }
 
+.Navbar ul li:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  border-bottom-width: thin;
+}
+
 .span {
   width: 30px;
   display: none;
@@ -35,17 +41,52 @@
   float: left;
   background-color: white;
 }
+.close {
+  display: none;
+}
 
 @media only screen and (max-width: 450px) {
   .span {
     display: block;
   }
-  .Navbar ul {
+  /* .Navbar ul {
     display: none;
-  }
+  } */
   .Navbar h1 {
     margin-left: 100px;
     margin-top: 0px;
     margin-bottom: 12px;
+  }
+
+  .Navbar ul li {
+    margin-right: 30px;
+  }
+  .close {
+    display: block;
+  }
+  .list {
+    position: absolute;
+    top: -40px;
+    left: -70px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    height: 80px;
+    width: 375px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .list .close {
+    margin-right: 50px;
+  }
+  .back {
+    background-color: rgb(10, 10, 10, 0.5);
+    height: 1850px;
+    width: 412px;
+    margin-left: -270px;
+    position: absolute;
+    margin-top: 30px;
   }
 }

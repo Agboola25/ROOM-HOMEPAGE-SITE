@@ -1,21 +1,53 @@
 import "./Navbar.css";
+import Nav from "./icons/Nav";
+import Close from "./icons/Close";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const show = () => {
+    setToggle(true);
+  };
+
+  const hide = () => {
+    setToggle(false);
+  };
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", changeWidth);
+
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+
   return (
     <nav className="Navbar">
-      <div class="span">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="span" onClick={show}>
+        <Nav />
       </div>
 
       <h1>room</h1>
-      <ul>
-        <li>home</li>
-        <li>shop</li>
-        <li>about</li>
-        <li>contact</li>
-      </ul>
+
+      {(toggle || screenWidth > 450) && (
+        <div>
+          <ul className="list">
+            <span className="close" onClick={hide}>
+              <Close />
+            </span>
+            <li>home</li>
+            <li>shop</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+          <div className="back"></div>
+        </div>
+      )}
     </nav>
   );
 };
