@@ -32,14 +32,14 @@ const Navbar = () => {
         <Nav />
       </div>
 
-      <h1>room</h1>
+      <p>room</p>
 
       {(toggle || screenWidth > 450) && (
         <div>
           <ul className="list">
-            <span className="close" onClick={hide}>
+            <div className="close" onClick={hide}>
               <Close />
-            </span>
+            </div>
             <li>home</li>
             <li>shop</li>
             <li>about</li>
