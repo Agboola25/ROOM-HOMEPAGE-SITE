@@ -37,9 +37,9 @@ const Navbar = () => {
       {(toggle || screenWidth > 450) && (
         <div>
           <ul className="list">
-            <div className="close" onClick={hide}>
+            <li className="close" onClick={hide}>
               <Close />
-            </div>
+            </li>
             <li>home</li>
             <li>shop</li>
             <li>about</li>
